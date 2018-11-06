@@ -1,6 +1,5 @@
-# y
-
-> y
+# projectname
+> vuedemo
 
 ## Build Setup
 
