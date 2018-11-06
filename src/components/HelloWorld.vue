@@ -79,7 +79,12 @@
           awesome-vue
         </a>
       </li>
+
+      
     </ul>
+    <h3>
+      <router-link to="day01">跳转至HelloVue</router-link>
+    </h3>
   </div>
 </template>
 
