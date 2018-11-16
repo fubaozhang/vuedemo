@@ -19,10 +19,10 @@ export default new Router({
     {
       path: '/',
       component: Home,
-      name: '导航一',
+      name: '菜单列表',
       iconCls: 'el-icon-menu',//图标样式class
       children: [
-          /* { path: '/main', component: Main, name: '主页', hidden: true }, */
+          { path: '/main', component: Main, name: '主页', hidden: true },
           { path: '/table', component: Table, name: '菜鸟菜单',iconCls: 'el-icon-caret-right' },
           /* { path: '/form', component: Form, name: 'Form' }, */
          /*  { path: '/user', component: user, name: '列表' }, */
