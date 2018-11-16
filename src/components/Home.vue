@@ -6,7 +6,8 @@
 			</el-col>
 			<el-col :span="10">
 				<div class="tools" @click.prevent="collapse">
-					<i class="fa fa-align-justify"></i>
+					<!-- <i class="el-icon-arrow-left"></i> -->
+					<i :class="iconArrow"></i>
 				</div>
 			</el-col>
 			<el-col :span="4" class="userinfo">
@@ -75,10 +76,11 @@
 	export default {
 		data() {
 			return {
-				sysName:'VUEADMIN',
+				sysName:'疯狂新手',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',
+				iconArrow:'el-icon-arrow-left',
 				form: {
 					name: '',
 					region: '',
@@ -119,6 +121,11 @@
 			},
 			//折叠导航栏
 			collapse:function(){
+				if(this.iconArrow==='el-icon-arrow-left'){
+					this.iconArrow = 'el-icon-arrow-right';
+				}else{
+					this.iconArrow = 'el-icon-arrow-left';
+				}
 				this.collapsed=!this.collapsed;
 			},
 			showMenu(i,status){
