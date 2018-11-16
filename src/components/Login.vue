@@ -51,8 +51,9 @@ export default {
       handleSubmit2(ev){
         var _this = this;
         this.logining = true;
-        console.log('check success!');
-        return true;
+        /* console.log('check success!'); */
+        this.$router.push({ path: '/table' });
+        /* return true; */
       }
      /*  handleSubmit2(ev) {
         var _this = this;
